@@ -9,7 +9,7 @@ def on_connect(client, userdata, flags, rc):
     if rc == 0:
         client.connected_flag=True
         print('Client Sucessfuly Connected\n {}'.format(client))
-        client.subscribe('/app/services/book')
+        client.subscribe('/app/services/register/sensor/book')
     else:
         print('Bad Connection Returned Code={}'.format(rc))
 
@@ -19,7 +19,7 @@ def on_subscribe(client, userdata, mid, granted_qos):
         - Print information about the sucessfull of the process
     '''
 
-    print('Client Subscribed at /app/services/book')
+    print('Client Subscribed at /app/services/register/sensor/book')
     print('QOS : {}'.format(granted_qos))
 
 
@@ -45,4 +45,3 @@ def on_message(client, userdata, message):
     mesFormat = json.loads(mes.decode('utf-8'))
     print(mesFormat)
     print(type(mesFormat))
-    

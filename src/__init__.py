@@ -1,1 +1,1 @@
-from .mqtt_connection import ParserClient
+from .main import main

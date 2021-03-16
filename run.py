@@ -1,5 +1,4 @@
-from src import ParserClient
-import time
+from src import main
 
-while True:
-    time.sleep(0.001)
+if __name__ == "__main__":
+    main()

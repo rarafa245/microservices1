@@ -1,1 +1,1 @@
-from .start_mqtt_connection import ParserClient
+from .start_mqtt_connection import BookService
