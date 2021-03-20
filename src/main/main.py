@@ -1,10 +1,6 @@
 import time
-from src.mqtt_connection import BookService
+from .mqtt_connection import registry_service_connection
 
-'''
- The main function creates an empty while loop
- All of the actions are describled in ParserClient Callbacks.
-'''
 
 def main():
     while True:
